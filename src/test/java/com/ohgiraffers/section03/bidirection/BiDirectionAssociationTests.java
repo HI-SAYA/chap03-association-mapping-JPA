@@ -42,7 +42,7 @@ public class BiDirectionAssociationTests {
         //when
         /* 진짜 연관 관계는 최초 조회 시 조인 결과를 인출한다. */
         Menu foundMenu = entityManager.find(Menu.class, menuCode);
-        /* 가짜 연관 관계는 Category 엔티티만 조회하고 필요 시 연간 관계 엔티티를 조회하는 쿼리를 다시 실행하게 된다. */
+        /* 가짜 연관 관계는 Category 엔티티만 조회하고 필요 시 연관 관계 엔티티를 조회하는 쿼리를 다시 실행하게 된다. */
         Category foundCategory = entityManager.find(Category.class, categoryCode);
         //then
         assertEquals(menuCode, foundMenu.getMenuCode());
