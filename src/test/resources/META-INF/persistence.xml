@@ -6,6 +6,8 @@
         <class>com.ohgiraffers.section01.manytoone.MenuAndCategory</class>
         <class>com.ohgiraffers.section02.onetomany.Menu</class>
         <class>com.ohgiraffers.section02.onetomany.CategoryAndMenu</class>
+        <class>com.ohgiraffers.section03.bidirection.Menu</class>
+        <class>com.ohgiraffers.section03.bidirection.Category</class>
         <properties>
             <!-- 데이터 베이스 연결 정보 -->
             <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
